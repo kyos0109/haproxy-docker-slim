@@ -1,0 +1,460 @@
+{
+  "monitors": {
+    "fan": {
+      "monitor_pid": 1,
+      "monitor_ppid": 0,
+      "event_count": 18,
+      "main_process": {
+        "pid": 15,
+        "name": "haproxy",
+        "path": "/usr/local/sbin/haproxy",
+        "cmd": "haproxy -W -db",
+        "cwd": "/",
+        "root": "/",
+        "ppid": 1
+      },
+      "processes": {
+        "15": {
+          "pid": 15,
+          "name": "haproxy",
+          "path": "/usr/local/sbin/haproxy",
+          "cmd": "haproxy -W -db",
+          "cwd": "/",
+          "root": "/",
+          "ppid": 1
+        }
+      },
+      "process_files": {
+        "15": {
+          "/etc/localtime": {
+            "event_count": 3,
+            "first_eid": 16,
+            "reads": 2
+          },
+          "/lib/x86_64-linux-gnu/ld-2.24.so": {
+            "event_count": 1,
+            "first_eid": 3,
+            "reads": 1
+          },
+          "/lib/x86_64-linux-gnu/libc-2.24.so": {
+            "event_count": 1,
+            "first_eid": 15,
+            "reads": 1
+          },
+          "/lib/x86_64-linux-gnu/libcrypt-2.24.so": {
+            "event_count": 1,
+            "first_eid": 4,
+            "reads": 1
+          },
+          "/lib/x86_64-linux-gnu/libdl-2.24.so": {
+            "event_count": 1,
+            "first_eid": 6,
+            "reads": 1
+          },
+          "/lib/x86_64-linux-gnu/libm-2.24.so": {
+            "event_count": 1,
+            "first_eid": 12,
+            "reads": 1
+          },
+          "/lib/x86_64-linux-gnu/libpcre.so.3.13.3": {
+            "event_count": 1,
+            "first_eid": 14,
+            "reads": 1
+          },
+          "/lib/x86_64-linux-gnu/libpthread-2.24.so": {
+            "event_count": 2,
+            "first_eid": 7,
+            "reads": 1
+          },
+          "/lib/x86_64-linux-gnu/libz.so.1.2.8": {
+            "event_count": 1,
+            "first_eid": 5,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libcrypto.so.1.1": {
+            "event_count": 1,
+            "first_eid": 10,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/liblua5.3.so.0.0.0": {
+            "event_count": 1,
+            "first_eid": 11,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libpcreposix.so.3.13.3": {
+            "event_count": 1,
+            "first_eid": 13,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libssl.so.1.1": {
+            "event_count": 1,
+            "first_eid": 9,
+            "reads": 1
+          },
+          "/usr/local/sbin/haproxy": {
+            "event_count": 2,
+            "first_eid": 1,
+            "reads": 1,
+            "execs": 2
+          }
+        }
+      }
+    },
+    "pt": {
+      "arch_name": "amd64",
+      "syscall_count": 173,
+      "syscall_num": 24,
+      "syscall_stats": {
+        "0": {
+          "num": 0,
+          "name": "read",
+          "count": 14
+        },
+        "1": {
+          "num": 1,
+          "name": "write",
+          "count": 2
+        },
+        "10": {
+          "num": 10,
+          "name": "mprotect",
+          "count": 24
+        },
+        "102": {
+          "num": 102,
+          "name": "getuid",
+          "count": 1
+        },
+        "12": {
+          "num": 12,
+          "name": "brk",
+          "count": 5
+        },
+        "13": {
+          "num": 13,
+          "name": "rt_sigaction",
+          "count": 2
+        },
+        "14": {
+          "num": 14,
+          "name": "rt_sigprocmask",
+          "count": 2
+        },
+        "158": {
+          "num": 158,
+          "name": "arch_prctl",
+          "count": 1
+        },
+        "2": {
+          "num": 2,
+          "name": "open",
+          "count": 24
+        },
+        "202": {
+          "num": 202,
+          "name": "futex",
+          "count": 17
+        },
+        "21": {
+          "num": 21,
+          "name": "access",
+          "count": 2
+        },
+        "218": {
+          "num": 218,
+          "name": "set_tid_address",
+          "count": 1
+        },
+        "273": {
+          "num": 273,
+          "name": "set_robust_list",
+          "count": 1
+        },
+        "3": {
+          "num": 3,
+          "name": "close",
+          "count": 13
+        },
+        "39": {
+          "num": 39,
+          "name": "getpid",
+          "count": 7
+        },
+        "4": {
+          "num": 4,
+          "name": "stat",
+          "count": 6
+        },
+        "5": {
+          "num": 5,
+          "name": "fstat",
+          "count": 15
+        },
+        "59": {
+          "num": 59,
+          "name": "execve",
+          "count": 1
+        },
+        "63": {
+          "num": 63,
+          "name": "uname",
+          "count": 1
+        },
+        "7": {
+          "num": 7,
+          "name": "poll",
+          "count": 1
+        },
+        "8": {
+          "num": 8,
+          "name": "lseek",
+          "count": 1
+        },
+        "9": {
+          "num": 9,
+          "name": "mmap",
+          "count": 30
+        },
+        "97": {
+          "num": 97,
+          "name": "getrlimit",
+          "count": 1
+        },
+        "99": {
+          "num": 99,
+          "name": "sysinfo",
+          "count": 1
+        }
+      }
+    }
+  },
+  "image": {
+    "files": [
+      {
+        "file_type": "File",
+        "file_path": "/etc/localtime",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "R": true
+        },
+        "file_size": 790,
+        "sha1_hash": "e5635f0691154dfc95a832e4445d2c9dfa44309c"
+      },
+      {
+        "file_type": "File",
+        "file_path": "/lib/x86_64-linux-gnu/ld-2.24.so",
+        "mode": "-rwxr-xr-x",
+        "flags": {
+          "R": true
+        },
+        "file_size": 153288,
+        "sha1_hash": "b11f17f814a38d498252cd3a186e1c9fd983c588"
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "ld-2.24.so",
+        "file_size": 10
+      },
+      {
+        "file_type": "File",
+        "file_path": "/lib/x86_64-linux-gnu/libc-2.24.so",
+        "mode": "-rwxr-xr-x",
+        "flags": {
+          "R": true
+        },
+        "file_size": 1689360,
+        "sha1_hash": "07c653721a0131b9c8168142fe2738c8ac63c6fd"
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/lib/x86_64-linux-gnu/libc.so.6",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "libc-2.24.so",
+        "file_size": 12
+      },
+      {
+        "file_type": "File",
+        "file_path": "/lib/x86_64-linux-gnu/libcrypt-2.24.so",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "R": true
+        },
+        "file_size": 39256,
+        "sha1_hash": "9605dee8cdf96d95a1fb94250a43d22a19a80878"
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/lib/x86_64-linux-gnu/libcrypt.so.1",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "libcrypt-2.24.so",
+        "file_size": 16
+      },
+      {
+        "file_type": "File",
+        "file_path": "/lib/x86_64-linux-gnu/libdl-2.24.so",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "R": true
+        },
+        "file_size": 14640,
+        "sha1_hash": "70fb8bfeb15fb25adb4bcfe3ff504cb14ba6378b"
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/lib/x86_64-linux-gnu/libdl.so.2",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "libdl-2.24.so",
+        "file_size": 13
+      },
+      {
+        "file_type": "File",
+        "file_path": "/lib/x86_64-linux-gnu/libm-2.24.so",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "R": true
+        },
+        "file_size": 1063328,
+        "sha1_hash": "fc2eb4b6d5894bd775a93a84db360bf97f8c5492"
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/lib/x86_64-linux-gnu/libm.so.6",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "libm-2.24.so",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/lib/x86_64-linux-gnu/libpcre.so.3",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "libpcre.so.3.13.3",
+        "file_size": 17
+      },
+      {
+        "file_type": "File",
+        "file_path": "/lib/x86_64-linux-gnu/libpcre.so.3.13.3",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "R": true
+        },
+        "file_size": 468920,
+        "sha1_hash": "c03addc3a7fe96cef59f570ac4acf95714442c14"
+      },
+      {
+        "file_type": "File",
+        "file_path": "/lib/x86_64-linux-gnu/libpthread-2.24.so",
+        "mode": "-rwxr-xr-x",
+        "flags": {
+          "R": true
+        },
+        "file_size": 135440,
+        "sha1_hash": "198a12599be77ef93e38015983fc68d4427823a7"
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/lib/x86_64-linux-gnu/libpthread.so.0",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "libpthread-2.24.so",
+        "file_size": 18
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/lib/x86_64-linux-gnu/libz.so.1",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "libz.so.1.2.8",
+        "file_size": 13
+      },
+      {
+        "file_type": "File",
+        "file_path": "/lib/x86_64-linux-gnu/libz.so.1.2.8",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "R": true
+        },
+        "file_size": 105088,
+        "sha1_hash": "0e52c5955d1b3ebc12c6e81f48e26dac9f34597a"
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/lib64/ld-linux-x86-64.so.2",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/lib/x86_64-linux-gnu/ld-2.24.so",
+        "file_size": 32
+      },
+      {
+        "file_type": "File",
+        "file_path": "/usr/lib/x86_64-linux-gnu/libcrypto.so.1.1",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "R": true
+        },
+        "file_size": 2686672,
+        "sha1_hash": "092358d7bd7529099d1133b9c424566bd4d3883d"
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/lib/x86_64-linux-gnu/liblua5.3.so.0",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "liblua5.3.so.0.0.0",
+        "file_size": 18
+      },
+      {
+        "file_type": "File",
+        "file_path": "/usr/lib/x86_64-linux-gnu/liblua5.3.so.0.0.0",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "R": true
+        },
+        "file_size": 233320,
+        "sha1_hash": "a0c0cf6f4a40cfc0b44243053ffffb6afac6e8f7"
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/lib/x86_64-linux-gnu/libpcreposix.so.3",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "libpcreposix.so.3.13.3",
+        "file_size": 22
+      },
+      {
+        "file_type": "File",
+        "file_path": "/usr/lib/x86_64-linux-gnu/libpcreposix.so.3.13.3",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "R": true
+        },
+        "file_size": 10128,
+        "sha1_hash": "9183badf5b30b6d81c3f0fb44ca9c90a629f5209"
+      },
+      {
+        "file_type": "File",
+        "file_path": "/usr/lib/x86_64-linux-gnu/libssl.so.1.1",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "R": true
+        },
+        "file_size": 442920,
+        "sha1_hash": "99b54f10166d6aee053c2f9a08fdb82d341a95f7"
+      },
+      {
+        "file_type": "File",
+        "file_path": "/usr/local/sbin/haproxy",
+        "mode": "-rwxr-xr-x",
+        "flags": {
+          "R": true,
+          "X": true
+        },
+        "file_size": 8538464,
+        "sha1_hash": "4ab7f8e522ff4ac1e1f69a19fd79a83904c49682"
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/share/zoneinfo/localtime",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/etc/localtime",
+        "file_size": 14
+      }
+    ]
+  }
+}
