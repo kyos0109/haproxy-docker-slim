@@ -1,5 +1,5 @@
 # new image
 bazel build ...
-COPY dir:15b044c9c9217dd024fe415ec2c42aca0395d76c2469204c605d19755b8bbafa in / 
+COPY dir:a199b00fe8db18695e9357d7dfaa5707295b3be8e5cb367a79a7a847f0e45cbd in / 
  ENTRYPOINT ["haproxy" "-W" "-db"]
-# end of image: kyos0109/haproxy-distroless (id: sha256:18651a321dea3532ae517b554d301843531095a22228ac2eb62d1680840dbc4a tags: latest)
+# end of image: kyos0109/haproxy-distroless (id: sha256:3bc20e4d38640121edb2c675c07237ee1c3d6e1d33595a026a8dbf03b9019c2f tags: latest)

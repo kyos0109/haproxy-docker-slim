@@ -6,7 +6,9 @@ profile kyos0109-haproxy-distroless-apparmor-profile flags=(attach_disconnected,
   /usr/local/sbin/haproxy rix,
 
 
+  /etc/group r,
   /etc/localtime r,
+  /etc/passwd r,
   /lib/x86_64-linux-gnu/ld-2.24.so r,
   /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2 r,
   /lib/x86_64-linux-gnu/libc-2.24.so r,

@@ -3,9 +3,9 @@
     "fan": {
       "monitor_pid": 1,
       "monitor_ppid": 0,
-      "event_count": 18,
+      "event_count": 27,
       "main_process": {
-        "pid": 15,
+        "pid": 16,
         "name": "haproxy",
         "path": "/usr/local/sbin/haproxy",
         "cmd": "haproxy -W -db",
@@ -14,21 +14,30 @@
         "ppid": 1
       },
       "processes": {
-        "15": {
-          "pid": 15,
+        "16": {
+          "pid": 16,
           "name": "haproxy",
           "path": "/usr/local/sbin/haproxy",
           "cmd": "haproxy -W -db",
           "cwd": "/",
           "root": "/",
           "ppid": 1
+        },
+        "19": {
+          "pid": 19,
+          "name": "runc:[2:INIT]",
+          "path": "/usr/local/bin/docker-runc",
+          "cmd": "docker-runc init",
+          "cwd": "/",
+          "root": "/",
+          "ppid": 0
         }
       },
       "process_files": {
-        "15": {
+        "16": {
           "/etc/localtime": {
             "event_count": 3,
-            "first_eid": 16,
+            "first_eid": 21,
             "reads": 2
           },
           "/lib/x86_64-linux-gnu/ld-2.24.so": {
@@ -37,8 +46,8 @@
             "reads": 1
           },
           "/lib/x86_64-linux-gnu/libc-2.24.so": {
-            "event_count": 1,
-            "first_eid": 15,
+            "event_count": 2,
+            "first_eid": 19,
             "reads": 1
           },
           "/lib/x86_64-linux-gnu/libcrypt-2.24.so": {
@@ -47,48 +56,48 @@
             "reads": 1
           },
           "/lib/x86_64-linux-gnu/libdl-2.24.so": {
-            "event_count": 1,
-            "first_eid": 6,
-            "reads": 1
-          },
-          "/lib/x86_64-linux-gnu/libm-2.24.so": {
-            "event_count": 1,
-            "first_eid": 12,
-            "reads": 1
-          },
-          "/lib/x86_64-linux-gnu/libpcre.so.3.13.3": {
-            "event_count": 1,
-            "first_eid": 14,
-            "reads": 1
-          },
-          "/lib/x86_64-linux-gnu/libpthread-2.24.so": {
             "event_count": 2,
             "first_eid": 7,
             "reads": 1
           },
-          "/lib/x86_64-linux-gnu/libz.so.1.2.8": {
+          "/lib/x86_64-linux-gnu/libm-2.24.so": {
             "event_count": 1,
+            "first_eid": 15,
+            "reads": 1
+          },
+          "/lib/x86_64-linux-gnu/libpcre.so.3.13.3": {
+            "event_count": 2,
+            "first_eid": 17,
+            "reads": 1
+          },
+          "/lib/x86_64-linux-gnu/libpthread-2.24.so": {
+            "event_count": 2,
+            "first_eid": 9,
+            "reads": 1
+          },
+          "/lib/x86_64-linux-gnu/libz.so.1.2.8": {
+            "event_count": 2,
             "first_eid": 5,
             "reads": 1
           },
           "/usr/lib/x86_64-linux-gnu/libcrypto.so.1.1": {
             "event_count": 1,
-            "first_eid": 10,
+            "first_eid": 13,
             "reads": 1
           },
           "/usr/lib/x86_64-linux-gnu/liblua5.3.so.0.0.0": {
             "event_count": 1,
-            "first_eid": 11,
+            "first_eid": 14,
             "reads": 1
           },
           "/usr/lib/x86_64-linux-gnu/libpcreposix.so.3.13.3": {
             "event_count": 1,
-            "first_eid": 13,
+            "first_eid": 16,
             "reads": 1
           },
           "/usr/lib/x86_64-linux-gnu/libssl.so.1.1": {
-            "event_count": 1,
-            "first_eid": 9,
+            "event_count": 2,
+            "first_eid": 11,
             "reads": 1
           },
           "/usr/local/sbin/haproxy": {
@@ -97,18 +106,35 @@
             "reads": 1,
             "execs": 2
           }
+        },
+        "19": {
+          "/etc/group": {
+            "event_count": 1,
+            "first_eid": 25,
+            "reads": 1
+          },
+          "/etc/localtime": {
+            "event_count": 2,
+            "first_eid": 26,
+            "reads": 1
+          },
+          "/etc/passwd": {
+            "event_count": 1,
+            "first_eid": 24,
+            "reads": 1
+          }
         }
       }
     },
     "pt": {
       "arch_name": "amd64",
-      "syscall_count": 173,
-      "syscall_num": 24,
+      "syscall_count": 159,
+      "syscall_num": 23,
       "syscall_stats": {
         "0": {
           "num": 0,
           "name": "read",
-          "count": 14
+          "count": 13
         },
         "1": {
           "num": 1,
@@ -119,11 +145,6 @@
           "num": 10,
           "name": "mprotect",
           "count": 24
-        },
-        "102": {
-          "num": 102,
-          "name": "getuid",
-          "count": 1
         },
         "12": {
           "num": 12,
@@ -148,12 +169,12 @@
         "2": {
           "num": 2,
           "name": "open",
-          "count": 24
+          "count": 23
         },
         "202": {
           "num": 202,
           "name": "futex",
-          "count": 17
+          "count": 13
         },
         "21": {
           "num": 21,
@@ -173,12 +194,12 @@
         "3": {
           "num": 3,
           "name": "close",
-          "count": 13
+          "count": 12
         },
         "39": {
           "num": 39,
           "name": "getpid",
-          "count": 7
+          "count": 2
         },
         "4": {
           "num": 4,
@@ -188,7 +209,7 @@
         "5": {
           "num": 5,
           "name": "fstat",
-          "count": 15
+          "count": 14
         },
         "59": {
           "num": 59,
@@ -200,11 +221,6 @@
           "name": "uname",
           "count": 1
         },
-        "7": {
-          "num": 7,
-          "name": "poll",
-          "count": 1
-        },
         "8": {
           "num": 8,
           "name": "lseek",
@@ -214,6 +230,11 @@
           "num": 9,
           "name": "mmap",
           "count": 30
+        },
+        "96": {
+          "num": 96,
+          "name": "gettimeofday",
+          "count": 1
         },
         "97": {
           "num": 97,
@@ -232,6 +253,16 @@
     "files": [
       {
         "file_type": "File",
+        "file_path": "/etc/group",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "R": true
+        },
+        "file_size": 10,
+        "sha1_hash": "b3fa9449ad7f025aea82c7a5591a7f118598c7e7"
+      },
+      {
+        "file_type": "File",
         "file_path": "/etc/localtime",
         "mode": "-rw-r--r--",
         "flags": {
@@ -239,6 +270,16 @@
         },
         "file_size": 790,
         "sha1_hash": "e5635f0691154dfc95a832e4445d2c9dfa44309c"
+      },
+      {
+        "file_type": "File",
+        "file_path": "/etc/passwd",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "R": true
+        },
+        "file_size": 32,
+        "sha1_hash": "5a6028305e424cacdf5ba46e99ab5e6522d05e12"
       },
       {
         "file_type": "File",
@@ -445,8 +486,8 @@
           "R": true,
           "X": true
         },
-        "file_size": 8538464,
-        "sha1_hash": "4ab7f8e522ff4ac1e1f69a19fd79a83904c49682"
+        "file_size": 8571832,
+        "sha1_hash": "98c8f76ed7780674cb49d377439276ae23d958aa"
       },
       {
         "file_type": "Symlink",
